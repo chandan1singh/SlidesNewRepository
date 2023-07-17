@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>slides</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="section" class="slide level1">
+<h1></h1>
+<h3 id="india-portal-2.0">India Portal 2.0</h3>
+<p>Project Review Meeting for june 2023 K&amp;A team 5 july 2023</p>
+</section>
+<section id="section-1" class="slide level1">
+<h1></h1>
+<h3 id="agenda">Agenda</h3>
+<ul>
+<li>Milestone 1 Scope of Work</li>
+<li>Data Analysis</li>
+<li>Current Project Team Organization</li>
+<li>SW Architecture View</li>
+<li>Going forward</li>
+<li>A glimpse of future milestones</li>
+</ul>
+</section>
+<section id="section-2" class="slide level1">
+<h1></h1>
+<div style="display:flex;width:100%;height:100%;">
+<div style="width:50%;height:700px;align-item:center;padding-top:35%;">
+Scope of Work
+</div>
+<div
+style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">
+Understanding of the Project
+</div>
+</div>
+</section>
+<section id="section-3" class="slide level1">
+<h1></h1>
+<h3>
+Milestone
+</h3>
+<p><img src="4.png"></p>
+</section>
+<section id="section-4" class="slide level1">
+<h1></h1>
+<h3>
+Milestone 1 RoadMap
+</h3>
+<p><img src="5.png"></p>
+</section>
+<section id="section-5" class="slide level1">
+<h1></h1>
+<div style="display:flex;width:100%;height:100%;">
+<div style="width:50%;height:700px;align-item:center;padding-top:32%;">
+<h2>
+Milestone1
+</h2>
+<p>
+Requirement Analysis
+</p>
+</div>
+<div
+style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">
+Theme Prototype Ready
+</div>
+</div>
+</section>
+<section id="section-6" class="slide level1">
+<h1></h1>
+<h3>
+Requirement Gathering…Data Source Analysis..1/2
+</h3>
+<p>
+Total Data Source : 23
+</p>
+<p>
+Not available : 8
+</p>
+<p>
+Available and Analysed : 15
+</p>
+</section>
+<section id="section-7" class="slide level1">
+<h1></h1>
+<h2 id="data-sourceapi-not-available">Data Source:API Not available</h2>
+<h3>
+Data Source:API Not available
+</h3>
+<table>
+<tr>
+<td>
+S.No.
+</td>
+<td>
+Component
+</td>
+<td>
+Sources
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+services
+</td>
+<td>
+Various Digital services Delivery <br>
+Portals/Applications(Umang,Service Pus,NGSP etc)
+</td>
+<td>
+through APIs
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+schemes
+</td>
+<td>
+Platforms like Haqdarshak, EasyGov,Schemopedia, <br>Digital Empowerment
+Foundation,etc <br> Portals/Applications(Umang,Service Pus,NGSP etc)
+</td>
+<td>
+One Platform would be selected for integration, through APIs
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+infographics
+</td>
+<td>
+MyGov,DataGov,PIB
+</td>
+<td>
+thorough APIs
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+news
+</td>
+<td>
+PIB,DDNews,NewsonAir etc
+</td>
+<td>
+through APIs and RSS Feeds
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+webcasts
+</td>
+<td>
+webcast.gov.in
+</td>
+<td>
+through APIs
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+state contact directory
+</td>
+<td>
+S3Waas
+</td>
+<td>
+State level contact directory will be created as and when the
+departments onboard,through APIs
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+acts and rules
+</td>
+<td>
+indiacode.nic.in
+</td>
+<td>
+through APIs
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+Visualization
+</td>
+<td>
+DataGov
+</td>
+<td>
+through APIs
+</td>
+</tr>
+</table>
+</section>
+<section id="section-8" class="slide level1">
+<h1></h1>
+<h3>
+Data Source:API analysed…2/2
+</h3>
+<table>
+<tr>
+<td>
+S.No.
+</td>
+<td>
+Component
+</td>
+<td>
+Source
+</td>
+<td>
+Mode
+</td>
+<td>
+Search API
+</td>
+<td>
+Reference website
+</td>
+<td>
+K&amp;A Remarks
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+ecourts contact <br> directory <br>(judges)
+</td>
+<td>
+S3WaaS
+</td>
+<td>
+through APIs
+</td>
+<td>
+Make at NPI
+</td>
+<td>
+https://ecourts.gov.in/
+</td>
+<td>
+Available and being analysed
+</td>
+</tr>
+<tr>
+<td>
+8
+</td>
+<td>
+knowindia- <br> tourist places
+</td>
+<td>
+S3WaaS
+</td>
+<td>
+through APIs
+</td>
+<td>
+Make at NPI
+</td>
+<td>
+https://aliraipr.nic.in/en/tourist-places
+</td>
+<td>
+Available and Analysed
+</td>
+</tr>
+<tr>
+<td>
+9
+</td>
+<td>
+knowindia- <br> accomodation
+</td>
+<td>
+S3WaaS
+</td>
+<td>
+through APIs
+</td>
+<td>
+Make at NPI
+</td>
+<td>
+https://agra.nic.in/acco <br> modation/html/https://alir <br>
+aipr.nic.in/en/where-t <br> o-stay
+</td>
+<td>
+Available and Analysed
+</td>
+</tr>
+<tr>
+<td>
+10
+</td>
+<td>
+knowindia- <br> photo gallary
+</td>
+<td>
+S3WaaS
+</td>
+<td>
+through APIs
+</td>
+<td>
+Make at NPI
+</td>
+<td>
+https://agra.nic.in/acco <br> modation/html/https://alir <br>
+aipr.nic.in/en/where-t <br> o-stay
+</td>
+<td>
+Available and Analysed
+</td>
+</tr>
+<tr>
+<td>
+11
+</td>
+<td>
+knowindia- <br> photo gallary
+</td>
+<td>
+S3WaaS
+</td>
+<td>
+through APIs
+</td>
+<td>
+Make at NPI
+</td>
+<td>
+https://agra.nic.in/acco <br> modation/html/https://alir <br>
+aipr.nic.in/en/where-t <br> o-stay
+</td>
+<td>
+Available and Analysed
+</td>
+</tr>
+<tr>
+<td>
+12
+</td>
+<td>
+knowindia- <br> produce
+</td>
+<td>
+S3WaaS
+</td>
+<td>
+through APIs
+</td>
+<td>
+Make at NPI
+</td>
+<td>
+https://agra.nic.in/acco <br> modation/html/https://alir <br>
+aipr.nic.in/en/where-t <br> o-stay
+</td>
+<td>
+Available and Analysed
+</td>
+</tr>
+<tr>
+<td>
+13
+</td>
+<td>
+knowindia- <br> helpline
+</td>
+<td>
+S3WaaS
+</td>
+<td>
+through APIs
+</td>
+<td>
+Make at NPI
+</td>
+<td>
+https://agra.nic.in/acco <br> modation/html/https://alir <br>
+aipr.nic.in/en/where-t <br> o-stay
+</td>
+<td>
+Available and Analysed
+</td>
+</tr>
+<tr>
+<td>
+14
+</td>
+<td>
+knowindia- <br> public utilities
+</td>
+<td>
+S3WaaS
+</td>
+<td>
+through APIs
+</td>
+<td>
+Make at NPI
+</td>
+<td>
+https://agra.nic.in/acco <br> modation/html/https://alir <br>
+aipr.nic.in/en/where-t <br> o-stay
+</td>
+<td>
+Available and Analysed
+</td>
+</tr>
+<tr>
+<td>
+15
+</td>
+<td>
+blogs
+</td>
+<td>
+MyGov, <br>DataGov
+</td>
+<td>
+through APIs
+</td>
+<td>
+</td>
+<td>
+https://agra.nic.in/acco <br> modation/html/https://alir <br>
+aipr.nic.in/en/where-t <br> o-stay
+</td>
+<td>
+Available and Analysed. Findings shared with Pankaj/Ravi
+</td>
+</tr>
+</table>
+</section>
+<section id="section-9" class="slide level1">
+<h1></h1>
+<h3>
+Data Source: Summary
+</h3>
+<ol>
+<li>
+Classification of data into master and transactional
+<ol style="list-style-type: lower-alpha;">
+Master
+<li>
+The data which is largely static like state list, district list,ministry
+list
+</li>
+<ol style="list-style-type: lower-roman;">
+Transactional
+<li>
+The data which changes quite often like Lok Sabha/Rajya Sabha
+members,who’who,judges etc
+</li>
+</ol>
+</ol>
+</li>
+<li>
+Conflicting masters
+<ol style="list-style-type: lower-alpha;">
+<li>
+which master IGOD or S3WAAS to refer for state and district list?
+</li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="section-10" class="slide level1">
+<h1></h1>
+<h3>
+Design Approach
+</h3>
+<p>
+First Ingest Master Data
+</p>
+<p>
+Resolve conflicts between Masters
+</p>
+<p>
+Link to ingested masters while ingested masters while ingesting
+transactional dta
+</p>
+</section>
+<section id="section-11" class="slide level1">
+<h1></h1>
+<div style="display:flex;width:100%;height:100%;">
+<div style="width:50%;height:700px;align-item:center;padding-top:32%;">
+<h2>
+S3WAAS
+</h2>
+<p>
+Data Analysis
+</p>
+</div>
+<div
+style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">
+
+</div>
+</div>
+</section>
+<section id="section-12" class="slide level1">
+<h1></h1>
+<h3>
+Data Source:Findings(S3WAAS)..1/2
+</h3>
+<table>
+<tr>
+<td>
+#
+</td>
+<td>
+S3WAAS API
+</td>
+<td>
+Proposed facets of search
+</td>
+<td>
+free text search
+</td>
+<td>
+Nature
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+1.
+</td>
+<td>
+state list
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD state master
+</td>
+</tr>
+<tr>
+<td>
+2.
+</td>
+<td>
+District list
+</td>
+<td>
+stateName
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD district master
+</td>
+</tr>
+<tr>
+<td>
+3.
+</td>
+<td>
+district who is who
+</td>
+<td>
+StateName,districtName,category,designation
+</td>
+<td>
+Name(Title)
+</td>
+<td>
+Transactional
+</td>
+<td>
+Duplication of content between who’who and Directory List
+</td>
+</tr>
+<tr>
+<td>
+4.
+</td>
+<td>
+district contact directory
+</td>
+<td>
+StateName,districtName,category,designation
+</td>
+<td>
+Name(Title)
+</td>
+<td>
+transactionalr
+</td>
+<td>
+Duplication of content between who’who and Directory List
+</td>
+</tr>
+<tr>
+<td>
+5.
+</td>
+<td>
+state category directory
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactionalr
+</td>
+<td>
+Not available
+</td>
+</tr>
+<tr>
+<td>
+6.
+</td>
+<td>
+ecourts contact directory(judges)
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactional
+</td>
+<td>
+Under Analysis
+</td>
+</tr>
+<tr>
+<td>
+7.
+</td>
+<td>
+ecourts contact directory(judges)
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactional
+</td>
+<td>
+Under Analysis
+</td>
+</tr>
+<tr>
+<td>
+8.
+</td>
+<td>
+ecourts contact directory(judges)
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactional
+</td>
+<td>
+Under Analysis
+</td>
+</tr>
+</table>
+#
+<h3>
+Data Source:Findings(S3WAAS)..1/2
+</h3>
+<table>
+<tr>
+<td>
+#
+</td>
+<td>
+S3WAAS API
+</td>
+<td>
+Proposed facets of search
+</td>
+<td>
+free text search
+</td>
+<td>
+Nature
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+9.
+</td>
+<td>
+state list
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD state master
+</td>
+</tr>
+<tr>
+<td>
+10.
+</td>
+<td>
+District list
+</td>
+<td>
+stateName
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD district master
+</td>
+</tr>
+<tr>
+<td>
+11.
+</td>
+<td>
+district who is who
+</td>
+<td>
+StateName,districtName,category,designation
+</td>
+<td>
+Name(Title)
+</td>
+<td>
+Transactional
+</td>
+<td>
+Duplication of content between who’who and Directory List
+</td>
+</tr>
+<tr>
+<td>
+12.
+</td>
+<td>
+district contact directory
+</td>
+<td>
+StateName,districtName,category,designation
+</td>
+<td>
+Name(Title)
+</td>
+<td>
+transactionalr
+</td>
+<td>
+Duplication of content between who’who and Directory List
+</td>
+</tr>
+<tr>
+<td>
+13.
+</td>
+<td>
+state category directory
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactionalr
+</td>
+<td>
+Not available
+</td>
+</tr>
+</table>
+#
+<div style="display:flex;width:100%;height:100%;">
+<div style="width:50%;height:700px;align-item:center;padding-top:32%;">
+<h2>
+IGOD
+</h2>
+<p>
+Data Analysis
+</p>
+</div>
+<div
+style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">
+
+</div>
+</div>
+#
+<h3>
+Data Source:Findings(IGOD)..1/2
+</h3>
+<table>
+<tr>
+<td>
+#
+</td>
+<td>
+IGOD API
+</td>
+<td>
+Proposed facets of search
+</td>
+<td>
+free text search
+</td>
+<td>
+Nature
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+1.
+</td>
+<td>
+state list
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD state master
+</td>
+</tr>
+<tr>
+<td>
+2.
+</td>
+<td>
+District list
+</td>
+<td>
+stateName
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD district master
+</td>
+</tr>
+<tr>
+<td>
+3.
+</td>
+<td>
+district who is who
+</td>
+<td>
+StateName,districtName,category,designation
+</td>
+<td>
+Name(Title)
+</td>
+<td>
+Transactional
+</td>
+<td>
+Duplication of content between who’who and Directory List
+</td>
+</tr>
+<tr>
+<td>
+4.
+</td>
+<td>
+district contact directory
+</td>
+<td>
+StateName,districtName,category,designation
+</td>
+<td>
+Name(Title)
+</td>
+<td>
+transactionalr
+</td>
+<td>
+Duplication of content between who’who and Directory List
+</td>
+</tr>
+<tr>
+<td>
+5.
+</td>
+<td>
+state category directory
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactionalr
+</td>
+<td>
+Not available
+</td>
+</tr>
+<tr>
+<td>
+6.
+</td>
+<td>
+state category directory
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactionalr
+</td>
+<td>
+Not available
+</td>
+</tr>
+<tr>
+<td>
+7.
+</td>
+<td>
+state category directory
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactionalr
+</td>
+<td>
+Not available
+</td>
+</tr>
+<tr>
+<td>
+8.
+</td>
+<td>
+state category directory
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Transactionalr
+</td>
+<td>
+Not available
+</td>
+</tr>
+</table>
+</section>
+<section id="section-13" class="slide level1">
+<h1></h1>
+<h3>
+Data Source:Findings(IGOD)..2/2
+</h3>
+<table>
+<tr>
+<td>
+#
+</td>
+<td>
+IGOD API
+</td>
+<td>
+Proposed facets of search
+</td>
+<td>
+free text search
+</td>
+<td>
+Nature
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+1.
+</td>
+<td>
+state list
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD state master
+</td>
+</tr>
+<tr>
+<td>
+2.
+</td>
+<td>
+District list
+</td>
+<td>
+stateName
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD district master
+</td>
+</tr>
+</table>
+#
+<div style="display:flex;width:100%;height:100%;">
+<div style="width:50%;height:700px;align-item:center;padding-top:32%;">
+<h2>
+SANSAD
+</h2>
+<p>
+Data Analysis
+</p>
+</div>
+<div
+style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">
+
+</div>
+</div>
+</section>
+<section id="section-14" class="slide level1">
+<h1></h1>
+<h3>
+Data Source: sansad Findings()..1
+</h3>
+<table>
+<tr>
+<td>
+#
+</td>
+<td>
+API
+</td>
+<td>
+Proposed facets of search
+</td>
+<td>
+free text search
+</td>
+<td>
+Nature
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+1.
+</td>
+<td>
+state list
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD state master
+</td>
+</tr>
+<tr>
+<td>
+2.
+</td>
+<td>
+District list
+</td>
+<td>
+stateName
+</td>
+<td>
+</td>
+<td>
+Master
+</td>
+<td>
+Conflicts with IGOD district master
+</td>
+</tr>
+</table>
+</section>
+<section id="section-15" class="slide level1">
+<h1></h1>
+<h2 id="frontend-activities-being-done-so-far">Frontend Activities being
+done so far</h2>
+<ul style="list-style:disc">
+<li>
+A faceted search prototype is develped and demonstrated for s3waas who’s
+who
+</li>
+<li>
+CMS use cases
+</li>
+<ul style="list-style:square">
+<li>
+Tag workflow requiring approval by moderator
+</li>
+<li>
+Tag workflow without approval(unmoderated)
+</li>
+<li>
+Masters tables
+</li>
+</ul>
+</ul>
+<p>
+Upcoming
+</p>
+<p>
+UI MockUps(Landing page)
+</p>
+<p>
+CMS use case
+</p>
+</section>
+<section id="section-16" class="slide level1">
+<h1></h1>
+<h3 id="cms-use-cases">CMS use cases</h3>
+<h4 id="functional-requirements">Functional Requirements</h4>
+<h6 id="newsletters">newsletters</h6>
+<h6 id="metadata-sectionseo">MetaData Section(SEO)</h6>
+<h6
+id="content-for-national-celebrations-republic-day-and-independence-day">content
+for National Celebrations (Republic day and Independence day)</h6>
+<h6 id="spotlights">spotlights</h6>
+<h6
+id="page-managementfor-pages-like-contact-us-about-us-etc-and-pages-based-on-user-profiling">page
+management(for pages like contact us, about us etc) and Pages based on
+user profiling</h6>
+<h6 id="adding-custom-attributes-to-the-data-like-tags">adding custom
+attributes to the data like Tags,</h6>
+<h6
+id="audit-management-in-strapiperhaps-available-in-enterprise-version">Audit
+management in Strapi(perhaps available in enterprise version)</h6>
+<h6 id="api-integration">API integration</h6>
+<h6 id="adding-people-group">adding People Group</h6>
+<p><br></p>
+<h3 id="non-functional-requirements">Non Functional Requirements</h3>
+<h5 id="third-party-authentication-implementation-using-keycloak.">Third
+party authentication implementation using keycloak.</h5>
+<h5 id="user-role-based-management-cms.">User role based management
+CMS.</h5>
+<h5 id="group-user-for-api-allowance.">Group user for api
+allowance.</h5>
+<h5 id="deploy-using-dockerkubernates.">Deploy using
+Docker/kubernates.</h5>
+<h5 id="multiple-instances-of-strpi.">Multiple instances of strpi.</h5>
+<h5 id="dashboards">Dashboards</h5>
+<h5 id="pipeline-workflowlike-source-of-each-pipeline..">Pipeline
+Workflow(like source of each pipeline..)</h5>
+</section>
+<section id="section-17" class="slide level1">
+<h1></h1>
+<h2 id="overview-of-pipeline-for-one-api-of-one-source">Overview of
+pipeline for one API of one source</h2>
+<p><img src="23.png"></p>
+</section>
+<section id="section-18" class="slide level1">
+<h1></h1>
+<h2 id="backend-activities-done-so-far">Backend Activities Done so
+far</h2>
+<ol type="1">
+<li>IGOD state pipeline</li>
+</ol>
+<ul>
+<li>IGOD state data acquisition task, data mapper task</li>
+</ul>
+<ol start="2" type="1">
+<li>Prototyping ongoing for a generic data store pipeline using topics
+and kafka connect ### Next</li>
+<li>S3WAAS state pipeline -Write S3WAAS state data acquisition pipeline,
+data mapper,</li>
+<li>Test S3WAAS state pipeline and IGOD state pipeline and see there are
+no conflicts with respect to start sequence</li>
+</ol>
+</section>
+<section id="section-19" class="slide level1">
+<h1></h1>
+<h2 id="devops-activities-being-so-far">Devops Activities being so
+far</h2>
+<p>
+Activities
+</p>
+<ul>
+<li>
+HW requirements shared
+</li>
+<li>
+DB prototyping
+</li>
+<li>
+<ul>
+<li>
+A mock data set of 1 lac records created
+</li>
+<li>
+Testing ongoing in postgres for:
+</li>
+<ul style="list-style:square">
+<li>
+Facet search
+</li>
+<li>
+Partitioning(horizontal and vertical)
+</li>
+<li>
+Free text search
+</li>
+<li>
+Field level access control
+</li>
+</ul>
+</ul>
+</li>
+</ul>
+</section>
+<section id="section-20" class="slide level1">
+<h1></h1>
+<h2 id="milestone-1-items-summary..12">Milestone 1 Items
+Summary..1/2</h2>
+<table>
+<tr>
+<td>
+Item
+</td>
+<td>
+Status
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+Requirements Gathering
+</td>
+<td>
+Ongoing
+</td>
+<td>
+SRS/Data Analysis/Architecture
+</td>
+</tr>
+<tr>
+<td>
+UI Mockups
+</td>
+<td>
+Ongoing
+</td>
+<td>
+Need to converge on UI landing page and navigation
+</td>
+</tr>
+<tr>
+<td>
+Data Acquisition Framework and Pipeline
+</td>
+<td>
+Ongoing
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Authentication System and API GW
+</td>
+<td>
+Not Started
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+CMS setup
+</td>
+<td>
+Ongoing
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Infra Setup
+</td>
+<td>
+Not Started
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Datastore setup
+</td>
+<td>
+Not Started
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Prototype Demonstration
+</td>
+<td>
+Ongoing
+</td>
+<td>
+Would need a use case that stakeholders would like to see
+</td>
+</tr>
+</table>
+</section>
+<section id="section-21" class="slide level1">
+<h1></h1>
+<h2 id="milestone-1-items-summary..12-1">Milestone 1 Items
+Summary..1/2</h2>
+<table>
+<tr>
+<td>
+Item
+</td>
+<td>
+Status
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+Project Management
+</td>
+<td>
+Ongoing
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Documentation
+</td>
+<td>
+Ongoing
+</td>
+<td>
+</td>
+</tr>
+</table>
+</section>
+<section id="section-22" class="slide level1">
+<h1></h1>
+<div style="display:flex;width:100%;height:100%;">
+<div style="width:50%;height:700px;align-item:center;padding-top:32%;">
+<h3>
+Current Project Team Organization
+</h3>
+</div>
+<div
+style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">
+<h6>
+Team Composition
+</h6>
+</div>
+</div>
+</section>
+<section id="section-23" class="slide level1">
+<h1></h1>
+<h2 id="team-composition">Team Composition</h2>
+<table>
+<tr>
+<td>
+Item
+</td>
+<td>
+Status
+</td>
+<td>
+Remarks
+</td>
+</tr>
+<tr>
+<td>
+Requirements Gathering
+</td>
+<td>
+Ongoing
+</td>
+<td>
+SRS/Data Analysis/Architecture
+</td>
+</tr>
+<tr>
+<td>
+UI Mockups
+</td>
+<td>
+Ongoing
+</td>
+<td>
+Need to converge on UI landing page and navigation
+</td>
+</tr>
+<tr>
+<td>
+Data Acquisition Framework and Pipeline
+</td>
+<td>
+Ongoing
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Authentication System and API GW
+</td>
+<td>
+Not Started
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+CMS setup
+</td>
+<td>
+Ongoing
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Infra Setup
+</td>
+<td>
+Not Started
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Datastore setup
+</td>
+<td>
+Not Started
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Prototype Demonstration
+</td>
+<td>
+Ongoing
+</td>
+<td>
+Would need a use case that stakeholders would like to see
+</td>
+</tr>
+</table>
+</section>
+<section id="section-24" class="slide level1">
+<h1></h1>
+<h2 id="milestone-1-items-summary..12-2">Milestone 1 Items
+Summary..1/2</h2>
+<table>
+<tr>
+<td>
+Role
+</td>
+<td>
+K&amp;A contact
+</td>
+<td>
+NIC Contact
+</td>
+</tr>
+<tr>
+<td>
+Program Manager
+</td>
+<td>
+Nity Gupta
+</td>
+<td>
+Lokesh Sir
+</td>
+</tr>
+<tr>
+<td>
+Project Manager
+</td>
+<td>
+Monika Verma
+</td>
+<td>
+Lokesh sir/Pankaj
+</td>
+</tr>
+<tr>
+<td>
+Development Lead
+</td>
+<td>
+Varad Gupta
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+FrontEnd Team
+</td>
+<td>
+Deepak Negi/Farhan
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Backend Team
+</td>
+<td>
+Adarsh Verma/Barsha/Jai
+</td>
+<td>
+Pankaj/Mansi/Rakesh/Sandeep
+</td>
+</tr>
+<tr>
+<td>
+DevOps Team
+</td>
+<td>
+Neeraj Yadav/Paul
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+CMS Lead
+</td>
+<td>
+Manoj Mahanta
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Document Lead
+</td>
+<td>
+Monika Verma
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+Tested Lead
+</td>
+<td>
+Kapil Jain
+</td>
+<td>
+</td>
+</tr>
+</table>
+</section>
+<section id="section-25" class="slide level1">
+<h1></h1>
+<h3 id="project-organization-structure">Project Organization
+Structure</h3>
+<p><img src="30.png"></p>
+</section>
+<section id="section-26" class="slide level1">
+<h1></h1>
+<div style="display:flex;width:100%;height:100%;">
+<div style="width:50%;height:700px;align-item:center;padding-top:32%;">
+<h2>
+Thank you
+</h2>
+</div>
+<div
+style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">
+
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
