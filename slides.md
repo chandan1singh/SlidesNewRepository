@@ -1,45 +1,58 @@
 #
-### India Portal 2.0
+<p style="color:orangered">India Portal 2.0</p>
+<p style="font-size:20px">
 Project Review Meeting for june 2023
 K&A team 5 july 2023
+</p>
 
 # 
-### Agenda
+<p style=";color:orangered">Agenda</p>
+<ul style="font-size:20px">
+<li>Milestone 1 Scope of Work</li>
+<li>Data Analysis</li>
+<li>Current Project Team Organization</li>
+<li>SW Architecture View</li>
+<li>Going forward</li>
+<li>A glimpse of future milestones</li>
+</ul>
+
+<!-- 
 + Milestone 1 Scope of Work
 + Data Analysis
 + Current Project Team Organization
 + SW Architecture View
 + Going forward
-+ A glimpse of future milestones
++ A glimpse of future milestones -->
 
 # 
-<div style="display:flex;width:100%;height:100%;">
-  <div style="width:50%;height:700px;align-item:center;padding-top:35%;">Scope of Work</div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">Understanding of the Project</div>
+<div style="display:flex;width:100%;height:100%;border:4px solid orangered">
+  <div style="width:50%;height:700px;align-item:center;padding-top:35%;;color:orangered;font-size:40px">Scope of Work</div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"><p style="font-size:15px">Understanding of the Project</p></div>
 </div>
 
 # 
-<h3>Milestone</h3>
-<img src="4.png">
+<h3 style="font-size:40px;color:orangered">Milestone</h3>
+<img src="4.png" style="border:10px solid orangered">
 
 #
-<h3>Milestone 1 RoadMap</h3>
-<img src="5.png">
+<h3 style="font-size:40px;color:orangered">Milestone 1 RoadMap</h3>
+<img src="5.png" style="border:10px solid orangered" >
 
 # 
-<div style="display:flex;width:100%;height:100%;">
-  <div style="width:50%;height:700px;align-item:center;padding-top:32%;"><h2>Milestone1</h2><p>Requirement Analysis</p></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;">Theme Prototype Ready</div>
+<div style="display:flex;width:100%;height:100%;border:4px solid orangered">
+  <div style="width:50%;height:700px;align-item:center;padding-top:32%;font-size:40px"><h2 style=";color:orangered" >Milestone1</h2><p>Requirement Analysis</p></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"><p style="font-size:15px">Theme Prototype Ready</p></div>
 </div>
 
 # 
-<h3>Requirement Gathering...Data Source Analysis..1/2</h3>
+<h3 style="font-size:40px;color:orangered">Requirement Gathering...Data Source Analysis..1/2</h3>
+<div style="font-size:20px">
 <p>Total Data Source : 23</p>
 <p>Not available : 8 </p>
 <p>Available and Analysed : 15</p>
+</div>
 
 # 
-## Data Source:API Not available
-<h3>Data Source:API Not available</h3>
-<table>
+<p style="color:orangered;font-size:40px">Data Source:API Not available</p>
+<table style="font-size:20px" >
 <tr>
 <td>S.No.</td>
 <td>Component</td>
@@ -97,8 +110,8 @@ K&A team 5 july 2023
 </table>
 
 #
-<h3>Data Source:API analysed...2/2</h3>
-<table>
+<h3 style="font-size:40px;color:orangered">Data Source:API analysed...2/2</h3>
+<table style="font-size:12px">
 <tr>
 <td>S.No.</td>
 <td >Component</td>
@@ -192,8 +205,8 @@ K&A team 5 july 2023
 </table>
 
 #
-<h3>Data Source: Summary</h3>
-<ol>
+<h3 style="font-size:40px;color:orangered">Data Source: Summary</h3>
+<ol style="font-size:20px">
   <li>Classification of data into master and transactional
      <ol style="list-style-type: lower-alpha;" >
        Master
@@ -215,19 +228,19 @@ K&A team 5 july 2023
 </ol>
 
 # 
-<h3>Design Approach</h3>
-<p>First Ingest Master Data</p>
-<p>Resolve conflicts between Masters</p>
-<p>Link to ingested masters while ingested masters while ingesting transactional dta</p>
+<h3 style="font-size:40px;color:orangered">Design Approach</h3>
+<p style="font-size:20px">First Ingest Master Data</p>
+<p style="font-size:20px">Resolve conflicts between Masters</p>
+<p style="font-size:20px">Link to ingested masters while ingested masters while ingesting transactional dta</p>
 
 # 
-<div style="display:flex;width:100%;height:100%;">
-  <div style="width:50%;height:700px;align-item:center;padding-top:32%;"><h2>S3WAAS</h2><p>Data Analysis</p></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"></div>
+<div style="display:flex;width:100%;height:100%;border:4px solid orangered">
+  <div style="width:50%;height:700px;align-item:center;padding-top:32%;font-size:40px"><h2 style=";color:orangered" >S3WAAS</h2><p>Data Analysis</p></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"></div>
 </div>
 
 #
-<h3>Data Source:Findings(S3WAAS)..1/2</h3>
-<table>
+<h3 style="font-size:40px;color:orangered">Data Source:Findings(S3WAAS)..1/2</h3>
+<table style="font-size:20px">
  <tr>
    <td>#</td>
    <td>S3WAAS API</td>
@@ -303,8 +316,8 @@ K&A team 5 july 2023
  </table>
 
  #
-<h3>Data Source:Findings(S3WAAS)..1/2</h3>
-<table>
+<h3 style="font-size:40px;color:orangered">Data Source:Findings(S3WAAS)..1/2</h3>
+<table style="font-size:20px">
  <tr>
    <td>#</td>
    <td>S3WAAS API</td>
@@ -356,13 +369,13 @@ K&A team 5 july 2023
  </table>
 
  # 
-<div style="display:flex;width:100%;height:100%;">
-  <div style="width:50%;height:700px;align-item:center;padding-top:32%;"><h2>IGOD</h2><p>Data Analysis</p></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"></div>
+<div style="display:flex;width:100%;height:100%;border:4px solid orangered">
+  <div style="width:50%;height:700px;align-item:center;padding-top:32%;font-size:40px"><h2>IGOD</h2><p>Data Analysis</p></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"></div>
 </div>
 
  #
-<h3>Data Source:Findings(IGOD)..1/2</h3>
-<table>
+<h3 style="font-size:40px;color:orangered">Data Source:Findings(IGOD)..1/2</h3>
+<table style="font-size:20px" >
  <tr>
    <td>#</td>
    <td>IGOD API</td>
@@ -438,24 +451,24 @@ K&A team 5 july 2023
  </table>
 
 #
-<h3>Data Source:Findings(IGOD)..2/2</h3>
-<table>
- <tr>
-   <td>#</td>
-   <td>IGOD API</td>
-   <td>Proposed facets of search</td>
-   <td>free text search</td>
-   <td>Nature</td>
-   <td>Remarks</td>
- </tr>
- <tr>
+<h3 style="font-size:40px;color:orangered">Data Source:Findings(IGOD)..2/2</h3>
+<table style="font-size:20px">
+<tr>
+    <td>#</td>
+    <td>IGOD API</td>
+    <td>Proposed facets of search</td>
+    <td>free text search</td>
+    <td>Nature</td>
+    <td>Remarks</td>
+</tr>
+<tr>
    <td>1.</td>
    <td>state list</td>
    <td></td>
    <td></td>
    <td>Master</td>
    <td>Conflicts with IGOD state master</td>
- </tr>
+</tr>
 <tr>
    <td>2.</td>
    <td>District list</td>
@@ -463,17 +476,17 @@ K&A team 5 july 2023
    <td></td>
    <td>Master</td>
    <td>Conflicts with IGOD district master</td>
- </tr>
- </table>
+</tr>
+</table>
 
- # 
-<div style="display:flex;width:100%;height:100%;">
+# 
+<div style="display:flex;width:100%;height:100%;border:4px solid orangered">
   <div style="width:50%;height:700px;align-item:center;padding-top:32%;"><h2>SANSAD</h2><p>Data Analysis</p></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"></div>
 </div>
 
 #
-<h3>Data Source: sansad Findings()..1</h3>
-<table>
+<h3 style="font-size:40px;color:orangered">Data Source: sansad Findings()..1</h3>
+<table style="font-size:20px">
  <tr>
    <td>#</td>
    <td>API</td>
@@ -501,8 +514,8 @@ K&A team 5 july 2023
  </table>
 
 #
-## Frontend Activities being done so far
-<ul style="list-style:disc">
+<p style="font-size:20px;color:orangered">Frontend Activities being done so far
+<ul style="list-style:disc;font-size:20px; ">
 <li>A faceted search prototype is develped and demonstrated for s3waas who's who</li>
 <li>CMS use cases</li>
 <ul style="list-style:square">
@@ -511,72 +524,78 @@ K&A team 5 july 2023
 <li>Masters tables</li>
 </ul>
 </ul>
-<p>Upcoming</p>
-<p>UI MockUps(Landing page)</p>
-<p>CMS use case</p>
+<p style="font-size:20px">Upcoming</p>
+<p style="font-size:20px">UI MockUps(Landing page)</p>
+<p style="font-size:20px">CMS use case</p>
 
 #
-### CMS use cases
-#### Functional Requirements
-###### newsletters
-###### MetaData Section(SEO)
-###### content for National Celebrations (Republic day and Independence day)
-###### spotlights 
-###### page management(for pages like contact us, about us etc) and Pages based on user profiling 
-###### adding custom attributes to the data like Tags,
-###### Audit management in Strapi(perhaps available in enterprise version)
-###### API integration
-###### adding People Group
-
+<p style="font-size:40px;color:orangered;">CMS use cases</p>
+<p style="font-size:30px">Functional Requirements</p>
+<p style="font-size:20px" >newsletters </p>
+<p style="font-size:20px">MetaData Section(SEO)</p>
+<p style="font-size:20px">content for National Celebrations (Republic day and Independence day)</p>
+<p style="font-size:20px">spotlights </p>
+<p style="font-size:20px">page management(for pages like contact us, about us etc) and Pages based on user profiling </p>
+<p style="font-size:20px"> adding custom attributes to the data like Tags,</p>
+<p style="font-size:20px">Audit management in Strapi(perhaps available in enterprise version)</p>
+<p style="font-size:20px">API integration</p>
+<p style="font-size:20px">adding People Group</p>
 <br>
-
-### Non Functional Requirements
-##### Third party authentication implementation using keycloak.
-##### User role based management CMS.
-##### Group user for api allowance.
-##### Deploy using Docker/kubernates.
-##### Multiple instances of strpi.
-##### Dashboards
-##### Pipeline Workflow(like source of each pipeline..)
+<br>
+<p style="font-size:20px">Non Functional Requirements</p>
+<p style="font-size:20px"> Third party authentication implementation using keycloak.</p>
+<p style="font-size:20px"> User role based management CMS.</p>
+<p style="font-size:20px"> Group user for api allowance.</p>
+<p style="font-size:20px"> Deploy using Docker/kubernates.</p>
+<p style="font-size:20px"> Multiple instances of strpi.</p>
+<p style="font-size:20px">Dashboards</p>
+<p style="font-size:20px">Pipeline Workflow(like source of each pipeline..)</p>
 
 
 # 
-## Overview of pipeline for one API of one source
-<img src="23.png">
+<p style="font-size:40px;color:orangered;" > Overview of pipeline for one API of one source </p>
+<img src="23.png" style="border:10px solid orangered">
 
 #
-## Backend Activities Done so far
-1. IGOD state pipeline
-+ IGOD state data acquisition task, data mapper task
-2. Prototyping ongoing for a generic data store pipeline using topics and kafka connect
-### Next
-1. S3WAAS state pipeline
--Write S3WAAS state data acquisition pipeline, data mapper,
-2. Test S3WAAS state pipeline and IGOD state pipeline and see there are no conflicts with respect to start sequence
+<p style="font-size:40px;color:orangered;">Backend Activities Done so far</p>
+<ul style="font-size:20px">
+  <li>IGOD state pipeline</li>
+  <li>IGOD state data acquisition task, data mapper task</li>
+  <li>Prototyping ongoing for a generic data store pipeline using</li>
+  <li>Topic and Kafka connect</li>
+  <li>Next</li>
+  <li>S3WAAS state pipeline</li>
+  <li>Write S3WAAS state data acquisition pipeline, data mapper,</li>
+  <li>Test S3WAAS state pipeline</li>
+  <li>There are no conflicts with respect to start sequence</li>
+</ul>
+<!-- <p style="font-size:20px">1.IGOD state pipeline</p>
+<p style="font-size:20px">2.IGOD state data acquisition task, data mapper task</p>
+<p style="font-size:20px">3. Prototyping ongoing for a generic data store pipeline using</p>
+<p style="font-size:20px">4.topics and kafka connect</p>
+<p style="font-size:20px">Next</p>
+<p style="font-size:20px">5. S3WAAS state pipeline</p>
+<p style="font-size:20px">6.Write S3WAAS state data acquisition pipeline, data mapper,</p>
+<p style="font-size:20px">7. Test S3WAAS state pipeline and IGOD state pipeline and see</p>
+<p style="font-size:20px">8. There are no conflicts with respect to start sequence</p> -->
 
 # 
-## Devops Activities being so far 
-<p>Activities</p>
-<ul>
+<p style="font-size:40px;color:orangered;">Devops Activities being so far</p> 
+<p style="font-size:20px">Activities</p>
+<ul style="font-size:20px">
   <li>HW requirements shared</li>
-  <li>DB prototyping</li>
-  <li>
-    <ul>
-      <li>A mock data set of 1 lac records created</li>
-      <li>Testing ongoing in postgres for:</li>
-      <ul style="list-style:square">
-        <li>Facet search</li>
-        <li>Partitioning(horizontal and vertical)</li>
-        <li>Free text search</li>
-        <li>Field level access control</li>
-      </ul>
-    </ul>
-  </li>
+  <li>DB Prototyping</li>
+  <li>A mock data set of 1 lac records created</li>
+  <li>Testing ongoing in postgres for:</li>
+  <li>Facet search</li>
+  <li>Partitioning(horizontal and vertical)</li>
+  <li>Free text search</li>
+  <li>Field level access control</li>
 </ul>
 
 #
-## Milestone 1 Items Summary..1/2
-<table>
+<p style="font-size:40px;color:orangered;">Milestone 1 Items Summary..1/2</p>
+<table style="font-size:20px">
 <tr>
   <td>Item</td>
   <td>Status</td>
@@ -625,8 +644,8 @@ K&A team 5 july 2023
 </table>
 
 # 
-## Milestone 1 Items Summary..1/2
-<table>
+<p style="font-size:40px;color:orangered;">Milestone 1 Items Summary..2/2</p>
+<table style="font-size:20px" >
 <tr>
   <td>Item</td>
   <td>Status</td>
@@ -645,77 +664,27 @@ K&A team 5 july 2023
 </table> 
 
 #
-<div style="display:flex;width:100%;height:100%;">
-  <div style="width:50%;height:700px;align-item:center;padding-top:32%;"><h3>Current Project Team Organization</h3></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"> <h6>Team Composition</h6> </div>
+<div style="display:flex;width:100%;height:100%;border:4px solid orangered">
+  <div style="width:50%;height:700px;align-item:center;padding-top:32%;font-size:40px"><h3 style="color:orangered">Current Project Team Organization</h3></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"> <p style="font-size:15px">Team Composition</p> </div>
 </div>
 
-#
-## Team Composition 
-<table>
-<tr>
-  <td>Item</td>
-  <td>Status</td>
-  <td>Remarks</td>
-</tr>
-<tr>
-  <td>Requirements Gathering</td>
-  <td>Ongoing</td>
-  <td>SRS/Data Analysis/Architecture</td>
-</tr>
-<tr>
-  <td>UI Mockups</td>
-  <td>Ongoing</td>
-  <td>Need to converge on UI landing page and navigation</td>
-</tr>
-<tr>
-  <td>Data Acquisition Framework and Pipeline</td>
-  <td>Ongoing</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Authentication System and API GW</td>
-  <td>Not Started</td>
-  <td></td>
-</tr>
-<tr>
-  <td>CMS setup</td>
-  <td>Ongoing</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Infra Setup</td>
-  <td>Not Started</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Datastore setup</td>
-  <td>Not Started</td>
-  <td></td>
-</tr>
-<tr>
-  <td>Prototype Demonstration</td>
-  <td>Ongoing </td>
-  <td>Would need a use case that stakeholders would like to see</td>
-</tr>
-</table>
-
-#
-## Milestone 1 Items Summary..1/2
-<table>
+# 
+<p style="font-size:40px;color:orangered">Team Composition</p>
+<table style="font-size:20px" >
 <tr>
   <td>Role</td>
-  <td>K&A contact</td>
+  <td>K&A</td>
   <td>NIC Contact</td>
 </tr>
 <tr>
   <td>Program Manager</td>
-  <td>Nity Gupta</td>
+  <td>Nitu Gupta</td>
   <td>Lokesh Sir</td>
 </tr>
 <tr>
   <td>Project Manager</td>
   <td>Monika Verma</td>
-  <td>Lokesh sir/Pankaj</td>
+  <td>Lokesh Sir/Pankaj</td>
 </tr>
 <tr>
   <td>Development Lead</td>
@@ -723,14 +692,14 @@ K&A team 5 july 2023
   <td></td>
 </tr>
 <tr>
-  <td>FrontEnd Team</td>
-  <td>Deepak Negi/Farhan</td>
+  <td>FrontEnd</td>
+  <td>Deepak NegiFarhan</td>
   <td></td>
 </tr>
 <tr>
-  <td>Backend Team</td>
-  <td>Adarsh Verma/Barsha/Jai</td>
-  <td>Pankaj/Mansi/Rakesh/Sandeep</td>
+  <td>BackEnd Team</td>
+  <td>Adarsh/Verma/Barsha/Jai</td>
+  <td></td>
 </tr>
 <tr>
   <td>DevOps Team</td>
@@ -743,22 +712,22 @@ K&A team 5 july 2023
   <td></td>
 </tr>
 <tr>
-  <td>Document Lead</td>
+  <td>Documentation Lead</td>
   <td>Monika Verma</td>
   <td></td>
 </tr>
 <tr>
-  <td>Tested Lead</td>
+  <td>Test Lead</td>
   <td>Kapil Jain</td>
   <td></td>
 </tr>
-</table>
+</table> 
 
 # 
-### Project Organization Structure
-<img src="30.png">
+<p style="font-size:40px;color:orangered">Project Organization Structure</p>
+<img src="30.png" style="border:10px solid orangered">
 
 # 
-<div style="display:flex;width:100%;height:100%;">
-  <div style="width:50%;height:700px;align-item:center;padding-top:32%;"><h2>Thank you</h2></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"></div>
+<div style="display:flex;width:100%;height:100%;border:4px solid orangered">
+  <div style="width:50%;height:700px;align-item:center;padding-top:32%;font-size:40px"><h2 style="color:orangered" >Thank you</h2></div><div style="width:50%;height:700px;background-color:teal;align-item:center;padding-top:35%;"></div>
 </div>
